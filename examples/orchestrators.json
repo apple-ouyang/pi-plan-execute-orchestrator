@@ -1,0 +1,33 @@
+{
+  "provider": "magpie",
+  "reviewEvery": 30,
+  "aliases": {
+    "opus": "magpie/auto/claude-opus-5-5",
+    "sonnet": "magpie/auto/claude-sonnet-5-5",
+    "sol": "magpie/codex/gpt-6.1-sol",
+    "glm": "magpie/auto/glm-5.3",
+    "glm-flash": "magpie/auto/glm-5.3-flash",
+    "deepseek": "magpie/auto/deepseek-flash",
+    "ds": "magpie/auto/deepseek-flash"
+  },
+  "presets": [
+    {
+      "id": "orchestrator-opus-ds",
+      "name": "Orchestrator · Opus 5.5 + DeepSeek Flash",
+      "planner": "magpie/auto/claude-opus-5-5",
+      "executor": "magpie/auto/deepseek-flash"
+    },
+    {
+      "id": "orchestrator-sol-ds",
+      "name": "Orchestrator · GPT-6.1 Sol + DeepSeek Flash",
+      "planner": "magpie/codex/gpt-6.1-sol",
+      "executor": "magpie/auto/deepseek-flash"
+    },
+    {
+      "id": "orchestrator-glm-ds",
+      "name": "Orchestrator · GLM-5.3 + DeepSeek Flash",
+      "planner": "magpie/auto/glm-5.3",
+      "executor": "magpie/auto/deepseek-flash"
+    }
+  ]
+}

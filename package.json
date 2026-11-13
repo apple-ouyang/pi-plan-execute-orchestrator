@@ -1,0 +1,36 @@
+{
+  "name": "pi-plan-execute-orchestrator",
+  "version": "0.1.0",
+  "description": "Single-conversation two-phase Plan & Execute Orchestrator for Pi coding agent — pairs a read-only Planner model with a fast Executor model, with hard tool gates and periodic review hooks.",
+  "type": "module",
+  "keywords": [
+    "pi-package",
+    "pi-coding-agent",
+    "orchestrator",
+    "plan-execute",
+    "virtual-model",
+    "router"
+  ],
+  "license": "MIT",
+  "author": "apple-ouyang",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/apple-ouyang/pi-plan-execute-orchestrator.git"
+  },
+  "pi": {
+    "extensions": [
+      "./extensions/plan-execute-orchestrator.ts"
+    ],
+    "changelogPath": "./CHANGELOG.md"
+  },
+  "scripts": {
+    "test": "node --test tests/orchestrator.test.ts"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-agent-core": "*",
+    "@earendil-works/pi-ai": "*",
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*",
+    "typebox": "*"
+  }
+}
